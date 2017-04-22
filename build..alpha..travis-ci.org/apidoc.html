@@ -1,0 +1,1345 @@
+<div class="apidocDiv">
+<style>
+/*csslint
+*/
+.apidocDiv {
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.apidocDiv a[href] {
+    color: #33f;
+    font-weight: bold;
+    text-decoration: none;
+}
+.apidocDiv a[href]:hover {
+    text-decoration: underline;
+}
+.apidocCodeCommentSpan {
+    background: #bbf;
+    color: #000;
+    display: block;
+}
+.apidocCodeKeywordSpan {
+    color: #d00;
+    font-weight: bold;
+}
+.apidocCodePre {
+    background: #eef;
+    border: 1px solid;
+    color: #777;
+    padding: 5px;
+    white-space: pre-wrap;
+}
+.apidocFooterDiv {
+    margin-top: 20px;
+    text-align: center;
+}
+.apidocModuleLi {
+    margin-top: 10px;
+}
+.apidocSectionDiv {
+    border-top: 1px solid;
+    margin-top: 20px;
+}
+.apidocSignatureSpan {
+    color: #777;
+    font-weight: bold;
+}
+</style>
+<h1>api documentation for
+    <a
+
+        href="https://github.com/nicolaspanel/node-svm"
+
+    >node-svm (v2.1.8)</a>
+</h1>
+<h4>Support Vector Machine for nodejs</h4>
+<div class="apidocSectionDiv"><a
+    href="#apidoc.tableOfContents"
+    id="apidoc.tableOfContents"
+><h1>table of contents</h1></a><ol>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.node-svm">module node-svm</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.node-svm.CSVC">
+            function <span class="apidocSignatureSpan">node-svm.</span>CSVC
+            <span class="apidocSignatureSpan">(config, model)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.node-svm.EpsilonSVR">
+            function <span class="apidocSignatureSpan">node-svm.</span>EpsilonSVR
+            <span class="apidocSignatureSpan">(config, model)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.node-svm.NuSVC">
+            function <span class="apidocSignatureSpan">node-svm.</span>NuSVC
+            <span class="apidocSignatureSpan">(config, model)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.node-svm.NuSVR">
+            function <span class="apidocSignatureSpan">node-svm.</span>NuSVR
+            <span class="apidocSignatureSpan">(config, model)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.node-svm.OneClassSVM">
+            function <span class="apidocSignatureSpan">node-svm.</span>OneClassSVM
+            <span class="apidocSignatureSpan">(config, model)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.node-svm.SVM">
+            function <span class="apidocSignatureSpan">node-svm.</span>SVM
+            <span class="apidocSignatureSpan">(config, model)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.node-svm.read">
+            function <span class="apidocSignatureSpan">node-svm.</span>read
+            <span class="apidocSignatureSpan">(fileName)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.node-svm.restore">
+            function <span class="apidocSignatureSpan">node-svm.</span>restore
+            <span class="apidocSignatureSpan">(model)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">node-svm.</span>SVM.prototype</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">node-svm.</span>kernelTypes</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">node-svm.</span>svmTypes</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.node-svm.CSVC">module node-svm.CSVC</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.node-svm.CSVC.CSVC">
+            function <span class="apidocSignatureSpan">node-svm.</span>CSVC
+            <span class="apidocSignatureSpan">(config, model)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.node-svm.CSVC.super_">
+            function <span class="apidocSignatureSpan">node-svm.CSVC.</span>super_
+            <span class="apidocSignatureSpan">(config, model)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.node-svm.EpsilonSVR">module node-svm.EpsilonSVR</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.node-svm.EpsilonSVR.EpsilonSVR">
+            function <span class="apidocSignatureSpan">node-svm.</span>EpsilonSVR
+            <span class="apidocSignatureSpan">(config, model)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.node-svm.EpsilonSVR.super_">
+            function <span class="apidocSignatureSpan">node-svm.EpsilonSVR.</span>super_
+            <span class="apidocSignatureSpan">(config, model)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.node-svm.NuSVC">module node-svm.NuSVC</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.node-svm.NuSVC.NuSVC">
+            function <span class="apidocSignatureSpan">node-svm.</span>NuSVC
+            <span class="apidocSignatureSpan">(config, model)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.node-svm.NuSVC.super_">
+            function <span class="apidocSignatureSpan">node-svm.NuSVC.</span>super_
+            <span class="apidocSignatureSpan">(config, model)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.node-svm.NuSVR">module node-svm.NuSVR</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.node-svm.NuSVR.NuSVR">
+            function <span class="apidocSignatureSpan">node-svm.</span>NuSVR
+            <span class="apidocSignatureSpan">(config, model)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.node-svm.NuSVR.super_">
+            function <span class="apidocSignatureSpan">node-svm.NuSVR.</span>super_
+            <span class="apidocSignatureSpan">(config, model)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.node-svm.OneClassSVM">module node-svm.OneClassSVM</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.node-svm.OneClassSVM.OneClassSVM">
+            function <span class="apidocSignatureSpan">node-svm.</span>OneClassSVM
+            <span class="apidocSignatureSpan">(config, model)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.node-svm.OneClassSVM.super_">
+            function <span class="apidocSignatureSpan">node-svm.OneClassSVM.</span>super_
+            <span class="apidocSignatureSpan">(config, model)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.node-svm.SVM">module node-svm.SVM</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.node-svm.SVM.SVM">
+            function <span class="apidocSignatureSpan">node-svm.</span>SVM
+            <span class="apidocSignatureSpan">(config, model)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.node-svm.SVM.prototype">module node-svm.SVM.prototype</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.node-svm.SVM.prototype._format">
+            function <span class="apidocSignatureSpan">node-svm.SVM.prototype.</span>_format
+            <span class="apidocSignatureSpan">(x)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.node-svm.SVM.prototype._restore">
+            function <span class="apidocSignatureSpan">node-svm.SVM.prototype.</span>_restore
+            <span class="apidocSignatureSpan">(model)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.node-svm.SVM.prototype.evaluate">
+            function <span class="apidocSignatureSpan">node-svm.SVM.prototype.</span>evaluate
+            <span class="apidocSignatureSpan">(testset)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.node-svm.SVM.prototype.getKernelType">
+            function <span class="apidocSignatureSpan">node-svm.SVM.prototype.</span>getKernelType
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.node-svm.SVM.prototype.getSvmType">
+            function <span class="apidocSignatureSpan">node-svm.SVM.prototype.</span>getSvmType
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.node-svm.SVM.prototype.isTrained">
+            function <span class="apidocSignatureSpan">node-svm.SVM.prototype.</span>isTrained
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.node-svm.SVM.prototype.isTraining">
+            function <span class="apidocSignatureSpan">node-svm.SVM.prototype.</span>isTraining
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.node-svm.SVM.prototype.normalize">
+            function <span class="apidocSignatureSpan">node-svm.SVM.prototype.</span>normalize
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.node-svm.SVM.prototype.predict">
+            function <span class="apidocSignatureSpan">node-svm.SVM.prototype.</span>predict
+            <span class="apidocSignatureSpan">(x)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.node-svm.SVM.prototype.predictProbabilities">
+            function <span class="apidocSignatureSpan">node-svm.SVM.prototype.</span>predictProbabilities
+            <span class="apidocSignatureSpan">(x)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.node-svm.SVM.prototype.predictProbabilitiesSync">
+            function <span class="apidocSignatureSpan">node-svm.SVM.prototype.</span>predictProbabilitiesSync
+            <span class="apidocSignatureSpan">(x)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.node-svm.SVM.prototype.predictSync">
+            function <span class="apidocSignatureSpan">node-svm.SVM.prototype.</span>predictSync
+            <span class="apidocSignatureSpan">(x)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.node-svm.SVM.prototype.reduce">
+            function <span class="apidocSignatureSpan">node-svm.SVM.prototype.</span>reduce
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.node-svm.SVM.prototype.train">
+            function <span class="apidocSignatureSpan">node-svm.SVM.prototype.</span>train
+            <span class="apidocSignatureSpan">(dataset)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+</ol></div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.node-svm" id="apidoc.module.node-svm">module node-svm</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.node-svm.CSVC" id="apidoc.element.node-svm.CSVC">
+        function <span class="apidocSignatureSpan">node-svm.</span>CSVC
+        <span class="apidocSignatureSpan">(config, model)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function CSVC(config, model) {
+    config = config || {};
+    config.svmType = svmTypes.C_SVC;
+    SVM.call(this, config, model);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+[[0, 0], 0],
+[[0, 1], 1],
+[[1, 0], 1],
+[[1, 1], 0]
+];
+
+// initialize a new predictor
+var clf = new svm.<span class="apidocCodeKeywordSpan">CSVC</span>();
+
+clf.train(xor).done(function () {
+// predict things
+xor.forEach(function(ex){
+    var prediction = clf.predictSync(ex[0]);
+    console.log(&#x27;%d XOR %d =&#x3e; %d&#x27;, ex[0][0], ex[0][1], prediction);
+});
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.node-svm.EpsilonSVR" id="apidoc.element.node-svm.EpsilonSVR">
+        function <span class="apidocSignatureSpan">node-svm.</span>EpsilonSVR
+        <span class="apidocSignatureSpan">(config, model)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function EpsilonSVR(config, model) {
+    config = config || {};
+    config.svmType = svmTypes.EPSILON_SVR;
+    SVM.call(this, config, model);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+Possible classifiers are:
+
+| Classifier  | Type                   | Params         | Initialization                |
+|-------------|------------------------|----------------|-------------------------------|
+| C_SVC       | multi-class classifier | `c`            | `= new svm.CSVC(opts)`        |
+| NU_SVC      | multi-class classifier | `nu`           | `= new svm.NuSVC(opts)`       |
+| ONE_CLASS   | one-class classifier   | `nu`           | `= new svm.OneClassSVM(opts)` |
+| EPSILON_SVR | regression             | `c`, `epsilon` | `= new svm.<span class="apidocCodeKeywordSpan">EpsilonSVR</span>(opts)`  |
+| NU_SVR      | regression             | `c`, `nu`      | `= new svm.NuSVR(opts)`       |
+
+## Kernels
+
+Possible kernels are:
+
+| Kernel  | Parameters                     |
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.node-svm.NuSVC" id="apidoc.element.node-svm.NuSVC">
+        function <span class="apidocSignatureSpan">node-svm.</span>NuSVC
+        <span class="apidocSignatureSpan">(config, model)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function NuSVC(config, model) {
+    config = config || {};
+    config.svmType = svmTypes.NU_SVC;
+    SVM.call(this, config, model);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+## Classifiers
+
+Possible classifiers are:
+
+| Classifier  | Type                   | Params         | Initialization                |
+|-------------|------------------------|----------------|-------------------------------|
+| C_SVC       | multi-class classifier | `c`            | `= new svm.CSVC(opts)`        |
+| NU_SVC      | multi-class classifier | `nu`           | `= new svm.<span class="apidocCodeKeywordSpan">NuSVC</span>(opts)`       |
+| ONE_CLASS   | one-class classifier   | `nu`           | `= new svm.OneClassSVM(opts)` |
+| EPSILON_SVR | regression             | `c`, `epsilon` | `= new svm.EpsilonSVR(opts)`  |
+| NU_SVR      | regression             | `c`, `nu`      | `= new svm.NuSVR(opts)`       |
+
+## Kernels
+
+Possible kernels are:
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.node-svm.NuSVR" id="apidoc.element.node-svm.NuSVR">
+        function <span class="apidocSignatureSpan">node-svm.</span>NuSVR
+        <span class="apidocSignatureSpan">(config, model)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function NuSVR(config, model) {
+    config = config || {};
+    config.svmType = svmTypes.NU_SVR;
+    SVM.call(this, config, model);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+| Classifier  | Type                   | Params         | Initialization                |
+|-------------|------------------------|----------------|-------------------------------|
+| C_SVC       | multi-class classifier | `c`            | `= new svm.CSVC(opts)`        |
+| NU_SVC      | multi-class classifier | `nu`           | `= new svm.NuSVC(opts)`       |
+| ONE_CLASS   | one-class classifier   | `nu`           | `= new svm.OneClassSVM(opts)` |
+| EPSILON_SVR | regression             | `c`, `epsilon` | `= new svm.EpsilonSVR(opts)`  |
+| NU_SVR      | regression             | `c`, `nu`      | `= new svm.<span class="apidocCodeKeywordSpan">NuSVR</span>(opts)`       |
+
+## Kernels
+
+Possible kernels are:
+
+| Kernel  | Parameters                     |
+|---------|--------------------------------|
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.node-svm.OneClassSVM" id="apidoc.element.node-svm.OneClassSVM">
+        function <span class="apidocSignatureSpan">node-svm.</span>OneClassSVM
+        <span class="apidocSignatureSpan">(config, model)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function OneClassSVM(config, model) {
+    config = config || {};
+    config.svmType = svmTypes.ONE_CLASS;
+    SVM.call(this, config, model);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+Possible classifiers are:
+
+| Classifier  | Type                   | Params         | Initialization                |
+|-------------|------------------------|----------------|-------------------------------|
+| C_SVC       | multi-class classifier | `c`            | `= new svm.CSVC(opts)`        |
+| NU_SVC      | multi-class classifier | `nu`           | `= new svm.NuSVC(opts)`       |
+| ONE_CLASS   | one-class classifier   | `nu`           | `= new svm.<span class="apidocCodeKeywordSpan">OneClassSVM</span>(opts
+)` |
+| EPSILON_SVR | regression             | `c`, `epsilon` | `= new svm.EpsilonSVR(opts)`  |
+| NU_SVR      | regression             | `c`, `nu`      | `= new svm.NuSVR(opts)`       |
+
+## Kernels
+
+Possible kernels are:
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.node-svm.SVM" id="apidoc.element.node-svm.SVM">
+        function <span class="apidocSignatureSpan">node-svm.</span>SVM
+        <span class="apidocSignatureSpan">(config, model)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">SVM = function (config, model){
+    this._config = _l.deepClone(defaultConfig(config));
+    if (model){
+        this._restore(model);
+    }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+| probability      | `false`                | Whether to train a SVC or SVR model for probability estimates                                         |
+
+The example below shows how to use them:
+
+```javascript
+var svm = require(&#x27;node-svm&#x27;);
+
+var clf = new svm.<span class="apidocCodeKeywordSpan">SVM</span>({
+svmType: &#x27;C_SVC&#x27;,
+c: [0.03125, 0.125, 0.5, 2, 8],
+
+// kernels parameters
+kernelType: &#x27;RBF&#x27;,
+gamma: [0.03125, 0.125, 0.5, 2, 8],
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.node-svm.read" id="apidoc.element.node-svm.read">
+        function <span class="apidocSignatureSpan">node-svm.</span>read
+        <span class="apidocSignatureSpan">(fileName)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">read = function (fileName){
+    return Q.nfcall(fs.readFile, fileName)
+        .then(function (data) {
+            switch (path.extname(fileName)){
+                case &#x27;.json&#x27;:
+                    return readJson(data);
+                default :
+                    return readLibsvm(data);
+            }
+        });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+Once the predictor is trained it can be evaluated against a test set.
+
+Pseudo code :
+```javascript
+var svm = require(&#x27;node-svm&#x27;);
+var clf = new svm.SVM(options);
+
+svm.<span class="apidocCodeKeywordSpan">read</span>(trainFile)
+.then(function(dataset){
+    return clf.train(dataset);
+})
+.then(function(trainedModel, trainingReport){
+     return svm.read(testFile);
+})
+.then(function(testset){
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.node-svm.restore" id="apidoc.element.node-svm.restore">
+        function <span class="apidocSignatureSpan">node-svm.</span>restore
+        <span class="apidocSignatureSpan">(model)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function restore(model) {
+    var conf = defaultConfig({});
+    return new SVM(conf, model);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.node-svm.CSVC" id="apidoc.module.node-svm.CSVC">module node-svm.CSVC</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.node-svm.CSVC.CSVC" id="apidoc.element.node-svm.CSVC.CSVC">
+        function <span class="apidocSignatureSpan">node-svm.</span>CSVC
+        <span class="apidocSignatureSpan">(config, model)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function CSVC(config, model) {
+    config = config || {};
+    config.svmType = svmTypes.C_SVC;
+    SVM.call(this, config, model);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+[[0, 0], 0],
+[[0, 1], 1],
+[[1, 0], 1],
+[[1, 1], 0]
+];
+
+// initialize a new predictor
+var clf = new svm.<span class="apidocCodeKeywordSpan">CSVC</span>();
+
+clf.train(xor).done(function () {
+// predict things
+xor.forEach(function(ex){
+    var prediction = clf.predictSync(ex[0]);
+    console.log(&#x27;%d XOR %d =&#x3e; %d&#x27;, ex[0][0], ex[0][1], prediction);
+});
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.node-svm.CSVC.super_" id="apidoc.element.node-svm.CSVC.super_">
+        function <span class="apidocSignatureSpan">node-svm.CSVC.</span>super_
+        <span class="apidocSignatureSpan">(config, model)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">super_ = function (config, model){
+    this._config = _l.deepClone(defaultConfig(config));
+    if (model){
+        this._restore(model);
+    }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.node-svm.EpsilonSVR" id="apidoc.module.node-svm.EpsilonSVR">module node-svm.EpsilonSVR</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.node-svm.EpsilonSVR.EpsilonSVR" id="apidoc.element.node-svm.EpsilonSVR.EpsilonSVR">
+        function <span class="apidocSignatureSpan">node-svm.</span>EpsilonSVR
+        <span class="apidocSignatureSpan">(config, model)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function EpsilonSVR(config, model) {
+    config = config || {};
+    config.svmType = svmTypes.EPSILON_SVR;
+    SVM.call(this, config, model);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+Possible classifiers are:
+
+| Classifier  | Type                   | Params         | Initialization                |
+|-------------|------------------------|----------------|-------------------------------|
+| C_SVC       | multi-class classifier | `c`            | `= new svm.CSVC(opts)`        |
+| NU_SVC      | multi-class classifier | `nu`           | `= new svm.NuSVC(opts)`       |
+| ONE_CLASS   | one-class classifier   | `nu`           | `= new svm.OneClassSVM(opts)` |
+| EPSILON_SVR | regression             | `c`, `epsilon` | `= new svm.<span class="apidocCodeKeywordSpan">EpsilonSVR</span>(opts)`  |
+| NU_SVR      | regression             | `c`, `nu`      | `= new svm.NuSVR(opts)`       |
+
+## Kernels
+
+Possible kernels are:
+
+| Kernel  | Parameters                     |
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.node-svm.EpsilonSVR.super_" id="apidoc.element.node-svm.EpsilonSVR.super_">
+        function <span class="apidocSignatureSpan">node-svm.EpsilonSVR.</span>super_
+        <span class="apidocSignatureSpan">(config, model)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">super_ = function (config, model){
+    this._config = _l.deepClone(defaultConfig(config));
+    if (model){
+        this._restore(model);
+    }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.node-svm.NuSVC" id="apidoc.module.node-svm.NuSVC">module node-svm.NuSVC</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.node-svm.NuSVC.NuSVC" id="apidoc.element.node-svm.NuSVC.NuSVC">
+        function <span class="apidocSignatureSpan">node-svm.</span>NuSVC
+        <span class="apidocSignatureSpan">(config, model)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function NuSVC(config, model) {
+    config = config || {};
+    config.svmType = svmTypes.NU_SVC;
+    SVM.call(this, config, model);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+## Classifiers
+
+Possible classifiers are:
+
+| Classifier  | Type                   | Params         | Initialization                |
+|-------------|------------------------|----------------|-------------------------------|
+| C_SVC       | multi-class classifier | `c`            | `= new svm.CSVC(opts)`        |
+| NU_SVC      | multi-class classifier | `nu`           | `= new svm.<span class="apidocCodeKeywordSpan">NuSVC</span>(opts)`       |
+| ONE_CLASS   | one-class classifier   | `nu`           | `= new svm.OneClassSVM(opts)` |
+| EPSILON_SVR | regression             | `c`, `epsilon` | `= new svm.EpsilonSVR(opts)`  |
+| NU_SVR      | regression             | `c`, `nu`      | `= new svm.NuSVR(opts)`       |
+
+## Kernels
+
+Possible kernels are:
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.node-svm.NuSVC.super_" id="apidoc.element.node-svm.NuSVC.super_">
+        function <span class="apidocSignatureSpan">node-svm.NuSVC.</span>super_
+        <span class="apidocSignatureSpan">(config, model)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">super_ = function (config, model){
+    this._config = _l.deepClone(defaultConfig(config));
+    if (model){
+        this._restore(model);
+    }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.node-svm.NuSVR" id="apidoc.module.node-svm.NuSVR">module node-svm.NuSVR</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.node-svm.NuSVR.NuSVR" id="apidoc.element.node-svm.NuSVR.NuSVR">
+        function <span class="apidocSignatureSpan">node-svm.</span>NuSVR
+        <span class="apidocSignatureSpan">(config, model)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function NuSVR(config, model) {
+    config = config || {};
+    config.svmType = svmTypes.NU_SVR;
+    SVM.call(this, config, model);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+| Classifier  | Type                   | Params         | Initialization                |
+|-------------|------------------------|----------------|-------------------------------|
+| C_SVC       | multi-class classifier | `c`            | `= new svm.CSVC(opts)`        |
+| NU_SVC      | multi-class classifier | `nu`           | `= new svm.NuSVC(opts)`       |
+| ONE_CLASS   | one-class classifier   | `nu`           | `= new svm.OneClassSVM(opts)` |
+| EPSILON_SVR | regression             | `c`, `epsilon` | `= new svm.EpsilonSVR(opts)`  |
+| NU_SVR      | regression             | `c`, `nu`      | `= new svm.<span class="apidocCodeKeywordSpan">NuSVR</span>(opts)`       |
+
+## Kernels
+
+Possible kernels are:
+
+| Kernel  | Parameters                     |
+|---------|--------------------------------|
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.node-svm.NuSVR.super_" id="apidoc.element.node-svm.NuSVR.super_">
+        function <span class="apidocSignatureSpan">node-svm.NuSVR.</span>super_
+        <span class="apidocSignatureSpan">(config, model)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">super_ = function (config, model){
+    this._config = _l.deepClone(defaultConfig(config));
+    if (model){
+        this._restore(model);
+    }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.node-svm.OneClassSVM" id="apidoc.module.node-svm.OneClassSVM">module node-svm.OneClassSVM</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.node-svm.OneClassSVM.OneClassSVM" id="apidoc.element.node-svm.OneClassSVM.OneClassSVM">
+        function <span class="apidocSignatureSpan">node-svm.</span>OneClassSVM
+        <span class="apidocSignatureSpan">(config, model)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function OneClassSVM(config, model) {
+    config = config || {};
+    config.svmType = svmTypes.ONE_CLASS;
+    SVM.call(this, config, model);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+Possible classifiers are:
+
+| Classifier  | Type                   | Params         | Initialization                |
+|-------------|------------------------|----------------|-------------------------------|
+| C_SVC       | multi-class classifier | `c`            | `= new svm.CSVC(opts)`        |
+| NU_SVC      | multi-class classifier | `nu`           | `= new svm.NuSVC(opts)`       |
+| ONE_CLASS   | one-class classifier   | `nu`           | `= new svm.<span class="apidocCodeKeywordSpan">OneClassSVM</span>(opts
+)` |
+| EPSILON_SVR | regression             | `c`, `epsilon` | `= new svm.EpsilonSVR(opts)`  |
+| NU_SVR      | regression             | `c`, `nu`      | `= new svm.NuSVR(opts)`       |
+
+## Kernels
+
+Possible kernels are:
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.node-svm.OneClassSVM.super_" id="apidoc.element.node-svm.OneClassSVM.super_">
+        function <span class="apidocSignatureSpan">node-svm.OneClassSVM.</span>super_
+        <span class="apidocSignatureSpan">(config, model)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">super_ = function (config, model){
+    this._config = _l.deepClone(defaultConfig(config));
+    if (model){
+        this._restore(model);
+    }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.node-svm.SVM" id="apidoc.module.node-svm.SVM">module node-svm.SVM</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.node-svm.SVM.SVM" id="apidoc.element.node-svm.SVM.SVM">
+        function <span class="apidocSignatureSpan">node-svm.</span>SVM
+        <span class="apidocSignatureSpan">(config, model)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">SVM = function (config, model){
+    this._config = _l.deepClone(defaultConfig(config));
+    if (model){
+        this._restore(model);
+    }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+| probability      | `false`                | Whether to train a SVC or SVR model for probability estimates                                         |
+
+The example below shows how to use them:
+
+```javascript
+var svm = require(&#x27;node-svm&#x27;);
+
+var clf = new svm.<span class="apidocCodeKeywordSpan">SVM</span>({
+svmType: &#x27;C_SVC&#x27;,
+c: [0.03125, 0.125, 0.5, 2, 8],
+
+// kernels parameters
+kernelType: &#x27;RBF&#x27;,
+gamma: [0.03125, 0.125, 0.5, 2, 8],
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.node-svm.SVM.prototype" id="apidoc.module.node-svm.SVM.prototype">module node-svm.SVM.prototype</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.node-svm.SVM.prototype._format" id="apidoc.element.node-svm.SVM.prototype._format">
+        function <span class="apidocSignatureSpan">node-svm.SVM.prototype.</span>_format
+        <span class="apidocSignatureSpan">(x)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">_format = function (x) {
+    var xNorm = normalizeInput(x, this._config.mu, this._config.sigma);
+    return numeric.dot(xNorm, this._config.u);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.node-svm.SVM.prototype._restore" id="apidoc.element.node-svm.SVM.prototype._restore">
+        function <span class="apidocSignatureSpan">node-svm.SVM.prototype.</span>_restore
+        <span class="apidocSignatureSpan">(model)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">_restore = function (model) {
+    var self = this;
+    this._baseSvm = BaseSVM.restore(model);
+    _o.forOwn(model.params, function(val, key){
+        self._config[key] = val;
+    });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.node-svm.SVM.prototype.evaluate" id="apidoc.element.node-svm.SVM.prototype.evaluate">
+        function <span class="apidocSignatureSpan">node-svm.SVM.prototype.</span>evaluate
+        <span class="apidocSignatureSpan">(testset)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">evaluate = function (testset) {
+    assert(this.isTrained(), &#x27;train classifier first&#x27;);
+    var dims = numeric.dim(testset);
+    assert(dims[0]&#x3e;0 &#x26;&#x26; dims[1] === 2 &#x26;&#x26; dims[2]&#x3e;0 , &#x27;testset must be an list of [X,y] tuples&#x27;);
+
+    var self = this;
+    var predictions = _a.map(testset, function (ex) { return [self.predictSync(ex[0]), ex[1]]; });
+
+    switch (this._config.svmType){
+        case svmTypes.C_SVC:
+        case svmTypes.NU_SVC:
+        case svmTypes.ONE_CLASS:
+            return classification.compute(predictions);
+        case svmTypes.EPSILON_SVR:
+        case svmTypes.NU_SVR:
+            return regression.compute(predictions);
+        default :
+            throw createError(&#x27;not supported type&#x27;, &#x27;ENOTSUP&#x27;);
+    }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+.then(function(dataset){
+    return clf.train(dataset);
+})
+.then(function(trainedModel, trainingReport){
+     return svm.read(testFile);
+})
+.then(function(testset){
+    return clf.<span class="apidocCodeKeywordSpan">evaluate</span>(testset);
+})
+.done(function(report){
+    console.log(report);
+});
+ ```
+# CLI
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.node-svm.SVM.prototype.getKernelType" id="apidoc.element.node-svm.SVM.prototype.getKernelType">
+        function <span class="apidocSignatureSpan">node-svm.SVM.prototype.</span>getKernelType
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">getKernelType = function () {
+    return this._config.kernelType;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.node-svm.SVM.prototype.getSvmType" id="apidoc.element.node-svm.SVM.prototype.getSvmType">
+        function <span class="apidocSignatureSpan">node-svm.SVM.prototype.</span>getSvmType
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">getSvmType = function () {
+    return this._config.svmType;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.node-svm.SVM.prototype.isTrained" id="apidoc.element.node-svm.SVM.prototype.isTrained">
+        function <span class="apidocSignatureSpan">node-svm.SVM.prototype.</span>isTrained
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">isTrained = function () {
+    return !!this._baseSvm ? this._baseSvm.isTrained(): false;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.node-svm.SVM.prototype.isTraining" id="apidoc.element.node-svm.SVM.prototype.isTraining">
+        function <span class="apidocSignatureSpan">node-svm.SVM.prototype.</span>isTraining
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">isTraining = function () {
+    return this._training;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.node-svm.SVM.prototype.normalize" id="apidoc.element.node-svm.SVM.prototype.normalize">
+        function <span class="apidocSignatureSpan">node-svm.SVM.prototype.</span>normalize
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">normalize = function () {
+    return this._config.normalize;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.node-svm.SVM.prototype.predict" id="apidoc.element.node-svm.SVM.prototype.predict">
+        function <span class="apidocSignatureSpan">node-svm.SVM.prototype.</span>predict
+        <span class="apidocSignatureSpan">(x)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">predict = function (x){
+    assert(this.isTrained());
+    return this._baseSvm.predict(this._format(x));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.node-svm.SVM.prototype.predictProbabilities" id="apidoc.element.node-svm.SVM.prototype.predictProbabilities">
+        function <span class="apidocSignatureSpan">node-svm.SVM.prototype.</span>predictProbabilities
+        <span class="apidocSignatureSpan">(x)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">predictProbabilities = function (x){
+    assert(this.isTrained());
+    return this._baseSvm.predictProbabilities(this._format(x));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.node-svm.SVM.prototype.predictProbabilitiesSync" id="apidoc.element.node-svm.SVM.prototype.predictProbabilitiesSync">
+        function <span class="apidocSignatureSpan">node-svm.SVM.prototype.</span>predictProbabilitiesSync
+        <span class="apidocSignatureSpan">(x)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">predictProbabilitiesSync = function (x){
+    assert(this.isTrained());
+    return this._baseSvm.predictProbabilitiesSync(this._format(x));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.node-svm.SVM.prototype.predictSync" id="apidoc.element.node-svm.SVM.prototype.predictSync">
+        function <span class="apidocSignatureSpan">node-svm.SVM.prototype.</span>predictSync
+        <span class="apidocSignatureSpan">(x)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">predictSync = function (x){
+    assert(this.isTrained());
+    return this._baseSvm.predictSync(this._format(x));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+// initialize a new predictor
+var clf = new svm.CSVC();
+
+clf.train(xor).done(function () {
+// predict things
+xor.forEach(function(ex){
+    var prediction = clf.<span class="apidocCodeKeywordSpan">predictSync</span>(ex[0]);
+    console.log(&#x27;%d XOR %d =&#x3e; %d&#x27;, ex[0][0], ex[0][1], prediction);
+});
+});
+
+/******** CONSOLE ********
+0 XOR 0 =&#x3e; 0
+0 XOR 1 =&#x3e; 1
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.node-svm.SVM.prototype.reduce" id="apidoc.element.node-svm.SVM.prototype.reduce">
+        function <span class="apidocSignatureSpan">node-svm.SVM.prototype.</span>reduce
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">reduce = function () {
+    return this._config.reduce;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.node-svm.SVM.prototype.train" id="apidoc.element.node-svm.SVM.prototype.train">
+        function <span class="apidocSignatureSpan">node-svm.SVM.prototype.</span>train
+        <span class="apidocSignatureSpan">(dataset)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">train = function (dataset) {
+    var deferred = Q.defer();
+    var self= this;
+    this._training = true;
+    var dims = numeric.dim(dataset);
+    assert(dims[0]&#x3e;0 &#x26;&#x26; dims[1] === 2 &#x26;&#x26; dims[2]&#x3e;0 , &#x27;dataset must be an list of [X,y] tuples&#x27;);
+
+    if (!this._config.normalize){
+        this._config.mu = _a.take(dims[2], function(){ return 0; });
+        this._config.sigma = _a.take(dims[2], function(){ return 1; });
+    }
+    else {
+        var norm = normalizeDataset(dataset);
+        this._config.mu = norm.mu;
+        this._config.sigma = norm.sigma;
+        dataset = norm.dataset;
+    }
+
+    if (!this._config.reduce){
+        this._config.u = numeric.identity(dims[2]);
+        this._retainedVariance = 1;
+        this._retainedDimension = dims[2];
+        this._initialDimension = dims[2];
+    }
+    else {
+        var red = reduce(dataset, this._config.retainedVariance);
+        this._config.u = red.U;
+        this._retainedVariance = red.retainedVariance;
+        this._retainedDimension = red.newDimension;
+        this._initialDimension = red.oldDimension;
+        dataset = red.dataset;
+    }
+
+    // evaluate all possible combinations using grid-search and CV
+    gridSearch(dataset, this._config)
+        .progress(function (progress) {
+            deferred.notify(progress.done / (progress.total + 1));
+        })
+        .spread(function(config, report){
+            self._baseSvm = new BaseSVM();
+            // train a new classifier using the entire dataset and the best config
+            return self._baseSvm.train(dataset, config)
+                .done(function (model) {
+                    deferred.notify(1);
+                    model.params = _o.merge(self._config, model.params);
+
+                    _o.mixIn(report, {
+                        reduce: self._config.reduce,
+                        retainedVariance : self._retainedVariance,
+                        retainedDimension : self._retainedDimension,
+                        initialDimension: self._initialDimension
+                    });
+                    deferred.resolve([model, report]);
+                });
+        })
+        .fail(function (err) {
+            throw err;
+        })
+        .fin(function () {
+            self._training = false;
+        });
+    return deferred.promise;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+    [[1, 0], 1],
+    [[1, 1], 0]
+];
+
+// initialize a new predictor
+var clf = new svm.CSVC();
+
+clf.<span class="apidocCodeKeywordSpan">train</span>(xor).done(function () {
+    // predict things
+    xor.forEach(function(ex){
+        var prediction = clf.predictSync(ex[0]);
+        console.log(&#x27;%d XOR %d =&#x3e; %d&#x27;, ex[0][0], ex[0][1], prediction);
+    });
+});
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocFooterDiv">
+    [ this document was created with
+    <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a>
+    ]
+</div>
+</div>
